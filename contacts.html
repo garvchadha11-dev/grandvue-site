@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contacts | Grand Vue Apartments</title>
+<meta name="description" content="Book a viewing at Grand Vue Apartments, Olorien, Arusha — apartments for rent. Call +255 719 180 380, WhatsApp, email info@grandvueapartments.com or enquire online.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contacts.html" data-solid-header>
+
+<section class="page-banner" style="background-image:url('assets/img/grand-vue-apartments-exterior-front.jpg')">
+  <div class="container">
+    <span class="eyebrow">Send Us Your Enquiry</span>
+    <h1>Contacts</h1>
+    <p class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Contacts</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- FORM -->
+      <div data-reveal>
+        <span class="eyebrow">Now Leasing</span>
+        <h2>Book a Viewing</h2>
+        <p style="color:var(--muted);margin-bottom:1.8rem">Looking to rent at Grand Vue Apartments? Share a few details and our team will be in touch with availability, floor plans and a time to view your future home.</p>
+        <form id="inquiry-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required placeholder="Your name">
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="+255 ...">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-field">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option>Studio / 1-Bedroom</option>
+              <option>2-Bedroom</option>
+              <option>3-Bedroom</option>
+              <option>4-Bedroom</option>
+              <option>5-Bedroom Duplex</option>
+              <option>A private viewing</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you're looking for..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Send Enquiry</button>
+          <p class="form-status form-note" role="status" aria-live="polite"></p>
+          <a class="wa-link" href="https://wa.me/255719180380?text=Hello%20Grand%20Vue%20Apartments%2C%20I%27d%20like%20to%20enquire%20about%20a%20home." target="_blank" rel="noopener" style="color:var(--green-700)">
+            <span data-icon="wa" style="width:20px;height:20px;display:inline-flex"></span> Or message us instantly on WhatsApp
+          </a>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div data-reveal data-delay="1">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <div class="ci"><span data-icon="pin"></span><div><small>Address</small><span>PPF AGM Building, Njiro<br>P.O. Box 421, Arusha, Tanzania</span></div></div>
+          <div class="ci"><span data-icon="phone"></span><div><small>Phone</small><a href="tel:+255719180380">+255 719 180 380</a></div></div>
+          <div class="ci"><span data-icon="mail"></span><div><small>Email</small><a href="mailto:info@grandvueapartments.com">info@grandvueapartments.com</a></div></div>
+          <div class="ci"><span data-icon="ig"></span><div><small>Instagram</small><a href="https://www.instagram.com/grandvueapartments/" target="_blank" rel="noopener">@grandvueapartments</a></div></div>
+          <div class="ci"><span data-icon="fb"></span><div><small>Facebook</small><a href="https://www.facebook.com/GrandVueApartmentsLimited" target="_blank" rel="noopener">Grand Vue Apartments Limited</a></div></div>
+          <a class="btn btn-gold" style="margin-top:1.6rem" href="assets/GVA-Brochure.pdf" target="_blank" rel="noopener">Download Brochure</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" id="map">
+  <div class="container">
+    <div class="center" data-reveal style="margin-bottom:2rem">
+      <span class="eyebrow">GVA on the Map</span>
+      <h2>Find Us at PPF AGM, Njiro</h2>
+    </div>
+    <div class="map-embed" data-reveal>
+      <iframe
+        title="Grand Vue Apartments — Njiro, Arusha"
+        src="https://www.google.com/maps?q=Grand+Vue+Apartments,+Njiro,+Arusha,+Tanzania&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
