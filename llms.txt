@@ -1,0 +1,15 @@
+# Grand Vue Apartments
+
+> 55 luxury residences for rent in Olorien, Arusha, Tanzania. Furnished and unfurnished apartments from one-bedroom studios to five-bedroom duplexes. Swimming pool, gym, landscaped gardens, back-up power, borehole water, 24/7 security, views of Mt. Meru and Mt. Kilimanjaro.
+
+Contact: +255 719 180 380 | info@grandvueapartments.com | WhatsApp https://wa.me/255719180380
+Address: PPF AGM Building, Njiro, P.O. Box 421, Arusha, Tanzania
+Instagram: https://www.instagram.com/grandvueapartments/
+
+## Pages
+- [Home](/): Overview, now leasing
+- [Apartments](/apartments.html): Unit types — studios & 1-bedroom, 2 & 3-bedroom, 4-bedroom, 5-bedroom duplexes
+- [Characteristics](/characteristics.html): Amenities and finishes
+- [Gallery](/gallery.html): Photos of residences and grounds
+- [About Arusha](/about-arusha.html): Location and city guide
+- [Contacts](/contacts.html): Enquiries and viewings

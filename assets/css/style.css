@@ -301,7 +301,7 @@ section{position:relative}
 @media(max-width:720px){
   :root{--header-h:70px}
   .nav-toggle{display:block}
-  .header-cta{display:none}
+  .nav .header-cta{margin-top:1.2rem}
   .nav{
     position:fixed;inset:0;background:var(--green-900);flex-direction:column;justify-content:center;
     gap:1.8rem;transform:translateX(100%);transition:transform .45s var(--ease);

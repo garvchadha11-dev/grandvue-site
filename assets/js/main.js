@@ -4,11 +4,7 @@
 (function () {
   "use strict";
 
-  var PHONE = "+255 719 180 380";
-  var PHONE_RAW = "255719180380";
   var EMAIL = "info@grandvueapartments.com";
-  var FB = "https://www.facebook.com/GrandVueApartmentsLimited";
-  var IG = "https://www.instagram.com/grandvueapartments/";
 
   /* ---- icons (inline svg) ---- */
   var ICON = {
@@ -21,80 +17,6 @@
     check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg>',
     arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:1em;height:1em"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
   };
-
-  var NAV = [
-    ["index.html", "Home"],
-    ["about-arusha.html", "About Arusha"],
-    ["characteristics.html", "Characteristics"],
-    ["apartments.html", "Apartments"],
-    ["gallery.html", "Gallery"],
-    ["contacts.html", "Contacts"]
-  ];
-
-  var page = document.body.getAttribute("data-page") || "index.html";
-
-  /* ---- header ---- */
-  function buildHeader() {
-    var solid = document.body.hasAttribute("data-solid-header");
-    var links = NAV.map(function (n) {
-      var active = n[0] === page ? " active" : "";
-      return '<a href="' + n[0] + '" class="' + active.trim() + '">' + n[1] + "</a>";
-    }).join("");
-    var html =
-      '<header class="site-header' + (solid ? " solid" : "") + '">' +
-        '<div class="container">' +
-          '<a href="index.html" class="brand" aria-label="Grand Vue Apartments home">' +
-            '<img src="assets/img/logo.png" alt="Grand Vue Apartments">' +
-          "</a>" +
-          '<nav class="nav" aria-label="Main menu">' + links +
-            '<a href="contacts.html" class="btn btn-gold header-cta">Book a Viewing</a>' +
-          "</nav>" +
-          '<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>' +
-        "</div>" +
-      "</header>";
-    document.body.insertAdjacentHTML("afterbegin", html);
-  }
-
-  /* ---- footer ---- */
-  function buildFooter() {
-    var quick = NAV.map(function (n) {
-      return '<li><a href="' + n[0] + '">' + n[1] + "</a></li>";
-    }).join("");
-    var html =
-      '<footer class="site-footer">' +
-        '<div class="container">' +
-          '<div class="footer-top">' +
-            "<div>" +
-              '<img class="flogo" src="assets/img/logo.png" alt="Grand Vue Apartments">' +
-              '<p class="ftagline">Luxury apartments for rent in the heart of Olorien, Arusha — where heaven meets earth.</p>' +
-              '<div class="fsocial"><a href="' + IG + '" target="_blank" rel="noopener" aria-label="Instagram">' + ICON.ig + "</a>" +
-              '<a href="' + FB + '" target="_blank" rel="noopener" aria-label="Facebook">' + ICON.fb + "</a>" +
-              '<a href="https://wa.me/' + PHONE_RAW + '" target="_blank" rel="noopener" aria-label="WhatsApp">' + ICON.wa + "</a></div>" +
-            "</div>" +
-            '<div><h4>Explore</h4><ul class="fmenu">' + quick + "</ul></div>" +
-            '<div><h4>Discover</h4><ul class="fmenu">' +
-              '<li><a href="apartments.html">Residences</a></li>' +
-              '<li><a href="characteristics.html">Amenities</a></li>' +
-              '<li><a href="gallery.html">Gallery</a></li>' +
-              '<li><a href="assets/GVA-Brochure.pdf" target="_blank" rel="noopener">Download Brochure</a></li>' +
-              '<li><a href="' + IG + '" target="_blank" rel="noopener">Follow on Instagram</a></li>' +
-              '<li><a href="contacts.html#map">Find us on map</a></li>' +
-            "</ul></div>" +
-            '<div class="fcontact"><h4>Get in touch</h4>' +
-              "<p>PPF AGM Building, Njiro<br>P.O. Box 421, Arusha, Tanzania</p>" +
-              '<p><a href="tel:+' + PHONE_RAW + '">' + PHONE + "</a></p>" +
-              '<p><a href="mailto:' + EMAIL + '">' + EMAIL + "</a></p>" +
-              '<a class="btn btn-gold fbrochure" href="assets/GVA-Brochure.pdf" target="_blank" rel="noopener">Download Brochure</a>' +
-            "</div>" +
-          "</div>" +
-          '<div class="footer-bottom">' +
-            "<span>Grand Vue Apartments &copy; " + new Date().getFullYear() + "</span>" +
-            "<span>Designed by architect <a href=\"https://www.sandradekusserow.com/\" target=\"_blank\" rel=\"noopener\">Sandra de Kusserow</a></span>" +
-          "</div>" +
-        "</div>" +
-      "</footer>";
-    document.body.insertAdjacentHTML("beforeend", html);
-  }
 
   /* ---- header scroll state + mobile toggle ---- */
   function headerBehaviour() {
@@ -223,8 +145,6 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    buildHeader();
-    buildFooter();
     headerBehaviour();
     injectIcons();
     heroSlider();
