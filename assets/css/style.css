@@ -192,13 +192,13 @@ section{position:relative}
 .res-card:hover .arrow{color:var(--gold-dark)}
 
 /* ---------- Gallery ---------- */
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;grid-auto-flow:dense}
 .gallery-grid .gitem{position:relative;overflow:hidden;border-radius:4px;cursor:pointer;aspect-ratio:16/10}
 .gallery-grid .gitem img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
 .gallery-grid .gitem:hover img{transform:scale(1.08)}
 .gallery-grid .gitem::after{content:"⤢";position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:1.6rem;background:rgba(19,36,26,.35);opacity:0;transition:.4s}
 .gallery-grid .gitem:hover::after{opacity:1}
-.gallery-grid .wide{grid-column:span 2}
+.gallery-grid .wide{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
 
 /* lightbox */
 .lightbox{position:fixed;inset:0;z-index:200;background:rgba(10,18,13,.94);display:none;align-items:center;justify-content:center;padding:4vw}
@@ -296,7 +296,7 @@ section{position:relative}
   .split.reverse .split-media{order:0}
   .split-media .badge{right:18px}
   .contact-grid{grid-template-columns:1fr}
-  .gallery-grid .wide{grid-column:span 1}
+  .gallery-grid .wide{grid-column:span 1;grid-row:span 1;aspect-ratio:16/10}
 }
 @media(max-width:720px){
   :root{--header-h:70px}
