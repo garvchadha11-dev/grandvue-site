@@ -121,7 +121,7 @@
       var d = new FormData(form);
       var name = (d.get("name") || "").toString().trim();
       var interest = (d.get("interest") || "").toString();
-      var subject = "Website enquiry — " + (interest || "Grand Vue Apartments");
+      var subject = "Website enquiry: " + (interest || "Grand Vue Apartments");
       var body =
         "Name: " + name + "\n" +
         "Email: " + (d.get("email") || "") + "\n" +
